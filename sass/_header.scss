@@ -1,0 +1,63 @@
+.header {
+  padding: 20px 0;
+  &__logo {
+    filter: brightness(100);
+    img {
+      width: 39px;
+    }
+  }
+  &__center {
+    &B {
+      padding: 0.4rem 0.6rem;
+      background-color: #425061;
+      box-sizing: border-box;
+      box-shadow: 0 0 2px 2px #0000001a;
+      width: auto;
+      clear: both;
+      display: inline-block;
+      border-radius: 2rem;
+      &ox {
+        span {
+          color: #fff;
+        }
+        img {
+          height: 1.6rem;
+          width: 1.6rem;
+        }
+        &1 {
+          background: #00c8aa;
+          cursor: pointer;
+          padding: 0.4rem 1rem;
+          border-radius: 2rem;
+          color: #fff;
+
+          img {
+            height: 1.6rem;
+            width: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    padding: 0.4rem 1rem .4rem .4rem;
+    background-color: #425061;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px #0000001a;
+    width: auto;
+    clear: both;
+    display: inline-block;
+    border-radius: 2rem;
+    .btns {
+        background: #e1e1e1;
+        cursor: pointer;
+        padding: 0.5rem 2rem ;
+        border-radius: 2rem;
+        display: block;
+    }
+    .btnsd {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+  }
+}

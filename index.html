@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="./webImages/logo.png">
+    <title>Novoresume</title>
+</head>
+<body>
+    <header class="header header__top">
+<div class="container align-items-center  d-flex justify-content-between gap-2">
+<div class="header__logo">
+    <a href="/">
+        <img src="webImages/logo.png" alt="">
+    </a>
+</div>
+<div class="header__center">
+    <div class="header__centerB d-flex gap-1 align-items-center">
+<div class="header__centerBox">
+    <span><img src="webImages/icon/font.svg" alt=""></span>
+    <span>Fonts</span>
+</div>
+<div class="header__centerBox">
+    <span><img src="webImages/icon/theme.svg" alt=""></span>
+    <span>Theme</span>
+</div>
+<div class="header__centerBox">
+    <span><img src="webImages/icon/layout.svg" alt=""></span>
+    <span>Layout</span>
+</div>
+<div class="header__centerBox">
+    <span><img src="webImages/icon/settings.svg" alt=""></span>
+    <span>Settings</span>
+</div>
+<div class="header__centerBox">
+    <span><img src="webImages/icon/undo.svg" alt=""></span>
+</div>
+<div class="header__centerBox">
+    <span><img src="webImages/icon/redo.svg" alt=""></span>
+</div>
+<div class="header__centerBox1 d-flex gap-1 align-items-center">
+    <span><img src="webImages/icon/download.svg" alt=""></span>
+    <span>Download</span>
+</div>
+    </div>
+</div>
+<div class="header__right d-flex gap-2 align-items-center">
+    <a class="btns">My Document</a>
+    <div class="btnsd"><i class="fa-solid fa-bars"></i></a>
+
+</div>
+
+</div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="section1Box">
+                <ul class="list d-flex justify-content-center align-items-center gap-1">
+                    <li><a href="#"><img src="webImages/arrow-left.svg" alt=""></a></li>
+                    <li><a href="#"><img src="webImages/arrow-right.svg" alt=""></a></li>
+                    <li><a href="#"><img src="webImages/icon/text-bold.svg" alt=""></a></li>
+                    <li><a href="#"><img src="webImages/icon/text-italic.svg" alt=""></a></li>
+                    <li><a href="#"><img src="webImages/icon/text-underline.svg" alt=""></a></li>
+                    <li><a href="#"><img src="webImages/icon/text-link.svg" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+        let a = $(".header__right").width();
+        $(".header__logo").css("width",a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.gap-1 {
+    gap: 10px;
+}
+.gap-2 {
+    gap: 20px;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+@import "./header";
+body {
+    margin: 0;
+    padding: 0;
+    background: #313b47;
+    font-size: .8rem;
+}
+.section1Box {
+    padding: 0.4rem 0.8rem;
+    background-color: #425061;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+    width: fit-content;
+    margin: 0 auto;
+    clear: both;
+    border-radius: 2rem;
+    img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    
+}
