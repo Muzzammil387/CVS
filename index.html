@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="./webImages/logo.png">
     <title>Novoresume</title>
+     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+   
 </head>
 <body>
     <header class="header header__top">
@@ -72,13 +75,61 @@
         </div>
     </section>
     <main class="main">
-
+        <div class="maintop d-flex align-items-center justify-content-between">
+            <div class="maintop_left">
+                <input type="text" value="" placeholder="My Resume">
+            </div>
+            <div class="maintop_center">
+                <div class="maintop_center_ d-flex gap-1 align-items-center">
+                    
+                    <div class="maintop_center_left"><i class="fa-solid fa-caret-left"></i></div>
+                    <ul class="list d-flex maintop_center_list">
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                    <div class="maintop_center_left"><i class="fa-solid fa-caret-right"></i></div>
+                </div>
+            </div>
+            <div class="maintop_right"></div>
+        </div>
+        <div class="mainBottom my-4">
+            <div class="mainBottom__top d-flex align-items-center justify-content-between gap-2">
+                <div class="mainBottom__top__left">
+                 <div class="name">Muzzammil Waris</div>
+                    <input type="text" class="title" oninput="resizeInput()" placeholder="Professional Title" id="myInput">
+                    <input type="text" class="distrib" placeholder="Short and engaging pitch about yourself.">
+                </div>
+                <div class="mainBottom__top__right">
+                    <div class="mainBottom__top__rightBox">
+                            <img src="webImages/profile.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <section class="section2">
+                <ul class="list d-flex justify-content-center gap-2">
+                    <li class="gap-1 d-flex align-items-center"><i class="fa-solid fa-envelope"></i><span>muzzammil.waris@gmdail.com</span></li>
+                    <li class="gap-1 d-flex align-items-center"><i class="fa-solid fa-phone"></i><span>Phone Number</span></li>
+                </ul>
+            </section>
+            <div class="section3">
+                <div class="section3Box">
+                    
+                </div>
+            </div>
+        </div>
+       
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
     <script>
         let a = $(".header__right").width();
         $(".header__logo").css("width",a);
+        function resizeInput() {
+  var input = document.getElementById("myInput");
+  input.style.width = (input.value.length + 1) + "ch";
+}
     </script>
 </body>
 </html>
