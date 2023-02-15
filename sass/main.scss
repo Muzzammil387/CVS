@@ -10,7 +10,7 @@
     margin: 0;
 }
 :root {
---par : aqua
+--par : #449399;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -27,7 +27,7 @@ body {
     padding: 0.4rem 0.8rem;
     background-color: #425061;
     box-sizing: border-box;
-    box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 2px 2px #000;
     width: fit-content;
     margin: 0 auto;
     clear: both;
@@ -67,7 +67,7 @@ main {
         padding: 0.4rem 0.8rem;
         background-color: #425061;
         box-sizing: border-box;
-        box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 2px 2px #000;
         width: fit-content;
         margin: 0 auto;
         clear: both;
@@ -157,4 +157,37 @@ main {
 .section3 {
     padding: 1rem;
     background: #fff;
+    &Box {
+        position: relative;
+
+        .experince {
+            font-size: 25px;
+            color:#449399;
+            border: unset;
+            width: auto;
+            max-width: 100%;
+            border-bottom: 4px solid transparent;
+            margin: .4rem 0;
+            display: block;
+            &::placeholder {
+                color:#449399;
+            }
+            &:focus {
+                border-color: var(--par);
+            }
+        }
+        &_t {
+            font-size: 20px;
+            color:#000;
+            border: unset;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            border-bottom: 1px solid var(--par);
+            margin: .4rem 0;
+            &::placeholder {
+                color:#000;
+            }
+        }
+    }
 }

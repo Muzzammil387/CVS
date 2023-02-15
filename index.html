@@ -100,7 +100,7 @@
             <div class="mainBottom__top d-flex align-items-center justify-content-between gap-2">
                 <div class="mainBottom__top__left">
                  <div class="name">Muzzammil Waris</div>
-                    <input type="text" class="title" oninput="resizeInput()" placeholder="Professional Title" id="myInput">
+                    <input type="text" class="title" oninput="resizeInput(`myInput`)" placeholder="Professional Title" id="myInput">
                     <input type="text" class="distrib" placeholder="Short and engaging pitch about yourself.">
                 </div>
                 <div class="mainBottom__top__right">
@@ -115,10 +115,14 @@
                     <li class="gap-1 d-flex align-items-center"><i class="fa-solid fa-phone"></i><span>Phone Number</span></li>
                 </ul>
             </section>
-            <div class="section3">
-                <div class="section3Box">
-                    
+            <div class="section3 row m-0">
+                <div class="section3__left col-lg-6">
+                    <div class="section3Box">
+                        <input type="text" class="experince" oninput="resizeInput(`myInput2`)" placeholder="Professional Title" id="myInput2">
+                        <input type="text" class="section3Box_t" placeholder="Professional Title" id="myInput2">
+                    </div>
                 </div>
+               
             </div>
         </div>
        
@@ -126,8 +130,8 @@
     <script>
         let a = $(".header__right").width();
         $(".header__logo").css("width",a);
-        function resizeInput() {
-  var input = document.getElementById("myInput");
+        function resizeInput(item) {
+  var input = document.getElementById(item);
   input.style.width = (input.value.length + 1) + "ch";
 }
     </script>
